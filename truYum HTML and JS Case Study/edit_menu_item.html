@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, margin=0">
+<style>
+
+
+/* Style the header */
+header {
+  background-color: #305496;
+  padding: 15px;
+  text-align: left;
+  font-size: 10px;
+  color: white;
+}
+/*Text Box*/
+    
+article {
+  float: left;
+  padding: px;
+  width: 100%;
+  background-color: #ffffff;
+  height: 300px; /* only for demonstration, should be removed */
+}
+    
+
+/* Clear floats after the columns */
+    
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #bfbfbf;
+  padding: 39px;
+  text-align: center;
+  color: black;
+}
+
+    table{
+        font-family: sans-serif;
+        border-collapse: collapse;
+        width: 100%;}
+    td{
+        padding-top: 70px;
+        padding-left: 90px;
+    }
+    }
+    
+.div-table-row {
+            display: table-row;
+            width: auto;
+            clear: both;
+        }
+.div-table-col {
+            float: left; /* fix for  buggy browsers */
+            display: table-column;
+            width: 200px;
+            /* background-color: #ccc;*/
+        }
+
+    .div-table {
+            display: table;
+            width: auto;
+            /*   background-color: #eee;*/
+            /*  border: 1px solid #666666;*/
+            border-spacing: 5px; /* cellspacing:poor IE support for  this */
+        }
+}
+</style>
+    
+    
+       
+    
+    
+</head>
+    
+    
+ <script>
+        function validate() {
+            var userId = document.forms["editForm"]["UserId"].value;
+            var option = document.forms["editForm"]["option"].value;
+
+            if (userId == "") {
+                alert("User id is required");
+                return false;
+            }
+            else if (option == "0") {
+                alert("Please choose an option");
+                return false;
+            }
+            return true;
+        }
+    </script>   
+    
+    
+    
+    
+<body>
+
+<header>
+  <div style="position: relative;  padding-left: 750px; font-size: 20px " ><u><a href="menu_item_list_customer.html" style="color: #ffffff;">Menu</a></u></div>
+    
+  <img src="top_left_image.jpeg" alt="Trulli" width="190" height="50" position:"relative" left: "80px" >
+</header>
+
+<section>
+    
+    <h1 style="position: absolute; padding-left: 90px;">Edit Menu Item</h1>
+    
+    <table>
+        
+        <td>
+        <div class="div-table-row">
+                <div class="div-table-col"><b>Name</b> <br /><input type="text" name="title" style="width: 650px" /></div>
+
+            </div>
+            </td>
+        
+     <tr> 
+         
+        <td style="position: absolute; padding-top: 20px;">
+    <div class="div-table-row">
+                <div class="div-table-col"><b>Price (Rs.)</b><br /><input type="text" name="price" value="" /> </div>
+                <div class="div-table-col"><b>Active</b><br /><input type="radio" name="inStock" checked="checked" />Yes <input type="radio" name="inStock" value="" />No</div>
+                <div class="div-table-col"><b>Date Of Launch</b> <br /><input type="date" /></div>
+                <div class="div-table-col">
+                    <b>Category</b><br /><select>
+                        <option value="0">Select</option>
+                        <option value="1">Starters</option>
+                        <option value="2">Main Course</option>
+                        <option value="2">Dessert</option>
+                        <option value="2">Drinks</option>
+                    </select>
+                </div>
+            </div>
+            
+            </td>
+    </tr>  
+        
+  
+    <tr>
+        <td style="position: absolute; padding-top: 80px;">
+        <div class="div-table-row">
+            <div class="div-table-col"><input type="checkbox" name="freeDelivery" value="" /><b>Free Delivery</b> </div>
+        </div> </td>
+    </tr>
+        
+     
+    <tr>
+        <td style="position: absolute; top: 280px; ">   <a href="edit_menu_item_status.html">
+    <input type="image" src="submit.gif" alt="Submit" width="130" height="48"></a>
+
+        </td>
+    </tr>
+    
+    </table>
+ 
+  
+  <article>
+    
+          
+    
+    
+    <p></p>
+      
+
+
+  </article>
+</section>
+
+<footer >
+  <div style="position: absolute;  left: 16px;  font-size: 15px " ><span>Copyright &#169; 2019</span></div>
+</footer>
+
+</body>
+</html>
